@@ -1,0 +1,5 @@
+__pycache__/
+__marimo__/
+logs/
+**/data/raw/
+*.duckdb

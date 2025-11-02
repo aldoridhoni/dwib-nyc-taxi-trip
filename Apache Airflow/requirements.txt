@@ -1,0 +1,4 @@
+duckdb
+dbt-duckdb
+beautifulsoup4
+pandas

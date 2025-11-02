@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fct_trips
+    columns:
+      - name: trip_id
+        tests:
+          - relationships:
+              to: ref('stg_taxi_trips')
+              field: trip_id
+      - name: pickup_location_id
+        tests:
+          - relationships:
+              to: ref('dim_zones')
+              field: location_id
+      - name: dropoff_location_id
+        tests:
+          - relationships:
+              to: ref('dim_zones')
+              field: location_id
