@@ -281,6 +281,10 @@ services:
         echo
         chown -R "${AIRFLOW_UID}:0" /opt/airflow/
         echo
+        echo "Change ownership of files in /opt/Data Build Tool to ${AIRFLOW_UID}:0"
+        echo
+        chown -R "${AIRFLOW_UID}:0" /opt/Data\ Build\ Tool/
+        echo
         echo "Change ownership of files in shared volumes to ${AIRFLOW_UID}:0"
         echo
         chown -v -R "${AIRFLOW_UID}:0" /opt/airflow/{logs,dags,plugins,config}
