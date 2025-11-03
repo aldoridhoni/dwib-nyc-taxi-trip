@@ -38,12 +38,7 @@ models:
     mart:
       +materialized: table
 
-sources:
-  main:
-    database: dev
-    schema: main
-    tables:
-      - name: raw_yellow_tripdata
+
 
 flags:
   send_anonymous_usage_stats: false

@@ -1,5 +1,12 @@
 version: 2
 
+sources:
+  - name: main
+    database: dev
+    schema: main
+    tables:
+      - name: raw_yellow_tripdata
+
 models:
   - name: stg_taxi_trips
     columns:
